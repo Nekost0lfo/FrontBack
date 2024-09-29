@@ -1,0 +1,166 @@
+.header{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+main{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    column-gap: 0;
+}
+
+.left{
+    border-right: 2px solid;
+    padding: 0px 100px 0px 20px;
+    height: 500px;
+}
+.right{
+    padding: 0px 0px 0px 20px;
+}
+
+.header_buttons{
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    gap: 15%;
+    margin-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+*{
+    padding: 0;
+}
+
+body{
+    background-color: #dddddd;
+}
+
+h1, h3{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(202, 53, 90);
+}
+
+h2, p, label{
+    font-family: "Montserrat", sans-serif;
+    color: #0f0f0f;
+    user-select: none;
+}
+
+input, select, option, textarea{
+    background-color: #333;
+    border: 2px solid #444;
+    color: #dddddd;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+
+h3, h2{
+    font-weight: 500;
+}
+
+hr {
+    width: 95%;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #454545;
+}
+
+.headbtn{
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #070707;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.headbtn:hover{
+    color:rgb(202, 53, 90);
+}
+.headbtn::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: rgb(202, 53, 90);
+    transition: width 0.4s ease, left 0.4s ease;
+}
+.headbtn:hover::after{
+    width: 80%;
+    left: 10%;
+}
+
+
+/* --------------Основной контент-------------- */
+
+
+
+footer {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --------------Модальное окно-------------- */
+
+
+.modal, .modalsuccess {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.5);
+    /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Содержимое модального окна */
+.modal-content {
+    background-color: #d6d6d6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
