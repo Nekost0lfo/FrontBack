@@ -13,15 +13,18 @@ main{
     margin: auto;
     flex-direction: row;
     column-gap: 0;
+    width: 95%;
+    height: max-content;
+    min-height: calc(100vh - 320px);
 }
 
 .left{
     border-right: 2px solid;
-    padding: 0px 100px 0px 20px;
+    padding: 0px 100px 0px 30px;
     height: 500px;
 }
 .right{
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 30px;
 }
 
 .header_buttons{
@@ -121,6 +124,15 @@ footer {
     width: 95%;
     display: flex;
     justify-content: space-between;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    justify-content: flex-start;
+    margin: auto;
 }
 
 
