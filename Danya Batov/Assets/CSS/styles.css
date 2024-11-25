@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -29,13 +29,16 @@ main{
 
 .header_buttons{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: flex-start;
-    gap: 15%;
-    margin-left: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #c2c2c2;
+    z-index: 10;
 }
+
 
 button{
     background-color: transparent;
@@ -134,6 +137,11 @@ footer {
     justify-content: flex-start;
     margin: auto;
 }
+
+@media screen and (min-width:200px) and (max-width:1024px){
+
+}
+
 
 
 /* --------------Модальное окно-------------- */
